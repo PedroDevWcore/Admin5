@@ -8,7 +8,7 @@ export interface DetailedLog extends AdminLog {
   };
 }
 class LogService {
-  private baseURL = import.meta.env.VITE_API_URL || '/Admin/api';
+  private baseURL = import.meta.env.VITE_API_URL || 'http://localhost:3002/Admin/api';
 
   private getAuthHeaders() {
     const token = localStorage.getItem('admin_token');

@@ -7,7 +7,7 @@ interface LoginResponse {
 }
 
 class AuthService {
-  private baseURL = import.meta.env.VITE_API_URL || '/Admin/api';
+  private baseURL = import.meta.env.VITE_API_URL || 'http://localhost:3002/Admin/api';
 
   async login(email: string, senha: string): Promise<LoginResponse> {
     try {
